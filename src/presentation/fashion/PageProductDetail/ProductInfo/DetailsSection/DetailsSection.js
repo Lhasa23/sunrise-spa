@@ -17,6 +17,7 @@ export default {
     const { t } = useI18n();
     const expanded = shallowRef([true, false]);
     const { locale } = useLocale();
+    const longDescription = getAttributeValue(props.currentVariant.attributesRaw[0].value, locale.value)
     const attributes = computed(() => {
       const attributes =
         props.currentVariant.attributesRaw.map(
@@ -55,6 +56,7 @@ export default {
       attributes,
       openAccordion,
       toggle,
+      longDescription,
       t,
     };
   },
