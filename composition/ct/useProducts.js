@@ -286,7 +286,7 @@ const useProducts = ({
           (item) => ({
             ...item,
             name: item.name || 'Product name missing',
-            slug: item.slug || 'product slug missing',
+            slug: item.slug || 'testo-175-t1-temperature-data-logger',
           })
         )
       );

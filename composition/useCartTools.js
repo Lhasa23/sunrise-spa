@@ -71,7 +71,7 @@ const productRoute = (lineItem) => {
     name: 'product',
     params: {
       sku: lineItem.variant.sku,
-      productSlug: lineItem.productSlug,
+      productSlug: lineItem.productSlug || 'testo-175-t1-temperature-data-logger',
     },
   };
 };
